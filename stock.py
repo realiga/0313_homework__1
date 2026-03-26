@@ -67,7 +67,7 @@ async def get_realtime_rate():
         print(f"💵 실시간 환율 적용: {rate:.2f}원")
         return rate
     except:
-        return 1385.0
+        return 1500.0
 
 async def job():
     print(f"[{time.strftime('%H:%M:%S')}] 🏛️ AI 통합 브리핑 시스템 가동...")
