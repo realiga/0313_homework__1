@@ -9,7 +9,7 @@ import telegram
 from dotenv import load_dotenv
 
 # 1. 환경 설정 및 키 로드
-load_dotenv("API_Key.env")
+load_dotenv(".env")
 KEYS = {
     "TG_TOKEN": os.getenv("TELEGRAM_TOKEN"),
     "CH_ID": os.getenv("CHAT_ID"),
@@ -49,14 +49,14 @@ except Exception as e:
 
 # 3. 포트폴리오 데이터
 my_portfolio = {
-    '240810.KQ': [121100.00, 25, '원익IPS'],
-    '015760.KS': [47538.00, 205, '한국전력'],
-    '005380.KS': [529000.00, 8, '현대차'],
-    '272210.KS': [125400.00, 37, '한화시스템'],
-    '441640.KS': [12860.00, 500, 'KODEX미국배당'],
-    'SCHD': [30.84, 200, 'SCHD'],
-    'SOXL': [57.42, 35, 'SOXL'],
-    'STRC': [100.12, 50, 'STRC']
+    '240810.KQ': [0, 0, '원익IPS'],
+    '015760.KS': [0, 0, '한국전력'],
+    '005380.KS': [0, 0, '현대차'],
+    '272210.KS': [0, 0, '한화시스템'],
+    '441640.KS': [0, 0, 'KODEX미국배당'],
+    'SCHD': [0, 0, 'SCHD'],
+    'SOXL': [0, 0, 'SOXL'],
+    'STRC': [0, 0, 'STRC']
 }
 
 async def get_realtime_rate():
